@@ -64,7 +64,7 @@ whiteWebSdk.replayRoom(replayRoomParams).then(function (player) {
 });
 ```
 
-注意这里有 `beginTimestamp` 和 `duration` 两个参数。它们用于限定回放的范围。举个例子，假设你的产品是在线课堂，课程在上午 08:00 开始，08:45 结束。那么，你可以将这两个参数设为。
+注意这里有 `beginTimestamp` 和 `duration` 两个参数。它们用于限定回放的范围。举个例子，假设你的产品是在线课堂，课程在上午 08:00 开始，08:45 结束。那么，你可以将这两个参数设为：
 
 ```javascript
 whiteWebSdk.replayRoom({

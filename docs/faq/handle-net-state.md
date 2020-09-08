@@ -29,7 +29,7 @@ const room = whiteWebSdk.joinRoom({
 1. 断连状态下 room 的成员方法和成员属性都不可以操作.
 
     ``` ts
-    phase === "connected" // 时是 room 和服务器连接上的状态，其他四种状态都要静止一切操作
+    phase === "connected" // 这是 room 和服务器连接上的状态，其他四种状态都要静止一切操作
     ```
 
 2. 代码案例

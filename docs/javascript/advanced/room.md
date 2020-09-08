@@ -3,7 +3,7 @@ id: room
 title: 实时房间
 ---
 
-每一个白板都属于一个房间。白板上写写画画的轨迹可以被房间里所有人看到。本章将涉及，如何创建时互动的房间，如何管理房间的状态。
+每一个白板都属于一个房间。白板上写写画画的轨迹可以被房间里所有人看到。本章将涉及，如何创建实时互动的房间，如何管理房间的状态。
 
 > 本章教程只会把房间状态管理的相关内容涉猎一遍。如果想深入了解相关内容，可以在阅读完本章后，进一步阅读[《实时房间状态管理》](https://developer.netless.link/documents/client/realtime-room-state-management)。
 
@@ -63,7 +63,7 @@ window.fetch(url, requestInit).then(function(response) {
 
 ## 房间的标示与鉴权
 
-在加入房间之前，要先准备房间的 UUID 和 Room Token。其中，UUID 是用来唯一标示房间的字符串。而 Room Token 用于加入房间时的健全。
+在加入房间之前，要先准备房间的 UUID 和 Room Token。其中，UUID 是用来唯一标示房间的字符串。而 Room Token 用于加入房间时的鉴权。
 
 你可以通过调用服务端 API 的方法，为特定房间签出 Room Token。同创建房间一样，这个过程也需要提供 SDK Token。
 
@@ -139,7 +139,7 @@ whiteWebSdk.joinRoom(joinRoomParams).then(function(room) {
 
 成功加入房间后，会通过回调拿到 `room` 对象。这是一个重要的对象，之后，我们所有代码都要围绕它来写。
 
-现在，让我们把互动白板在网页上展示出来把。在此之前，还需要在网页的 Dom 树中准备白板占位符。
+现在，让我们把互动白板在网页上展示出来吧。在此之前，还需要在网页的 Dom 树中准备白板占位符。
 
 ```markup
 <div id="whiteboard" style="width: 100%; height: 100vh;"></div>
