@@ -108,11 +108,14 @@ room.setViewMode(ViewMode.Broadcaster);
 
 ### 跟随者
 
-观众端业务实现，是基于`主播`模式用户已存在的前提。如需要观众通过操作变成`自由`模式。这里通过调用白板的`禁止视角变化`来达到目的。
+在`主播`已存在的前提下，其他用户通过 `room.setViewMode` 设置为 follower 即可完成视角跟随。如需不希望观众通过操作视角变成自由模式。这里需要通过调用`room.disableCameraTransform = true`禁止视角变化来达到目的。
 
 如果主播与观众端固定不变，且观众端无操作需求（无互动），可以在加入房间时就调用`禁止操作API`。（也可以在加入房间时，直接配置参数）。
 
-* 禁止操作 API，为`禁止教具操作`，`禁止视角变化`（移动缩放）两个 API 的集合，以下为各端 API 文档链接。
+* 禁止操作 API，为`禁止教具操作`，`禁止视角变化`（移动缩放）两个 API 的集合，以下为各端 API 文档链接：
+* JavaScript https://developer.netless.link/docs/javascript/features/js-view/#%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81
+* Android https://developer.netless.link/docs/javascript/features/js-view/#%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81
+* iOS https://developer.netless.link/docs/ios/guides/ios-view/#%E8%A7%86%E8%A7%92%E6%A8%A1%E5%BC%8F--%E4%B8%BB%E6%92%AD%EF%BC%8C%E8%A7%82%E4%BC%97%EF%BC%8C%E8%87%AA%E7%94%B1%EF%BC%88%E9%BB%98%E8%AE%A4%EF%BC%89
 
 **调用 禁止视角变化API 时机：**
 

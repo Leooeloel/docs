@@ -5,7 +5,7 @@ title: 原生 JavaScript
 
 本章介绍在不使用任何框架和工具的前提下，介绍如何以纯 JavaScript 接入White SDK，并开发 Web 互动白板应用。
 
-> 在此之前，你需要在 Netless 的管理控制台注册一个企业账号，并创建一个应用。然后获取此应用中的 `App Identifier` 和，并生成此应用的 `SDK Token`。
+> 在此之前，你需要在 Netless 的管理控制台注册一个企业账号，并创建一个应用。然后获取此应用中的 `App Identifier` 和`AK、SK`，并生成此应用的 `SDK Token`。
 
 你可以阅读[《应用与权限》](https://developer.netless.link/documents/guan-li-kong-zhi-tai/applications-and-authority)来了解具体操作。成功之后，你会获得如下内容。
 

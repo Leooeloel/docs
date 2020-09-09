@@ -61,9 +61,9 @@ window.fetch(url, requestInit).then(function(response) {
 
 更多关于创建房间 API 的内容，请参考[《房间 ｜ 服务端》](https://developer.netless.link/server/api-reference/room#chuang-jian-fang-jian)。
 
-## 房间的标示与鉴权
+## 房间的标识与鉴权
 
-在加入房间之前，要先准备房间的 UUID 和 Room Token。其中，UUID 是用来唯一标示房间的字符串。而 Room Token 用于加入房间时的鉴权。
+在加入房间之前，要先准备房间的 UUID 和 Room Token。其中，UUID 是用来唯一标识房间的字符串。而 Room Token 用于加入房间时的鉴权。
 
 你可以通过调用服务端 API 的方法，为特定房间签出 Room Token。同创建房间一样，这个过程也需要提供 SDK Token。
 

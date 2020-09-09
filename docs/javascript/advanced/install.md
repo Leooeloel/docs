@@ -29,7 +29,7 @@ npm install white-web-sdk
 
 ```bash
 yarn add white-web-sdk
-```startå
+​```startå
 ```
 
 <!--END_DOCUSAURUS_CODE_TABS-->
@@ -52,7 +52,7 @@ yarn add white-web-sdk
 
 如果用了 `webpack` 之类的打包工具，并用 npm、yarn 之类的包管理工具安装 White SDK，就可以通过如下方式引入项目。
 
-在进阶教程接之后的内容中，我们将默认你用这种方式来引入项目。
+在进阶教程之后的内容中，我们将默认你用这种方式来引入项目。
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JavaScript-->
